@@ -28,7 +28,7 @@ do
 	FILEXTEN="$(echo $FILENAME | sed 's/\..\{3\}$//')"
 
 	echo -e "\033[1m===> Migrating $FILENAME to $HOST>$BASE>$FILEXTEN ... \033[0m\n"
-	dbf2mysql -h $HOST -P $PASS -U $USER -d $BASE -t $FILEXTEN -c $FILENAME.dbf	
+	dbf2mysql -h $HOST -P $PASS -U $USER -d $BASE -t $FILEXTEN -c $FILENAME
 
 done
 exit 0
